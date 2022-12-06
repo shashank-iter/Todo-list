@@ -254,7 +254,7 @@ function remove(){
   const buttons = document.getElementsByTagName("button");
   const buttonPressed = e => { 
    let a = e.target.id;
-   let b = JSON.stringify(a);
+   
     let c =$('#'+a).parentsUntil(".note-container");
     c.remove();
     toast_remove();
