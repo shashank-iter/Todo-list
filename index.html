@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/index.css" />
+    <script src="/index.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"
+    />
+    <!-- daisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.42.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Document</title>
+    <script
+      src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- Top Nav Bar -->
+
+    <div class="drawer bg-white" >
+      <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content flex flex-col">
+        <!-- Navbar -->
+        <div class="w-full navbar bg-violet-500">
+          <div class="flex-none lg:hidden">
+            <label for="my-drawer-3" class="btn btn-square btn-ghost">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block w-6 h-6 stroke-current"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </label>
+          </div>
+          <div class="flex-1 px-2 mx-2  font-semibold text-xl text-gray-900">To-Do List</div>
+          <div class="flex-none hidden lg:block">
+            <ul class="menu menu-horizontal text-gray-900">
+              <!-- Navbar menu content here -->
+              <li>
+                <a href="#my-modal-2">Add a Task</a>
+              </li>
+              <li><a>Navbar Item 2</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Page content here -->
+        <main>
+         
+          <div class="modal" id="my-modal-2">
+            <div class="modal-box bg-violet-400">
+              <h3 class="font-bold text-lg">
+                
+              </h3>
+              <div class="py-4">
+                <p class="task-form-txt text-gray-900 font-semibold text-lg" >Task Title</p>
+                <input type="text" name="task-title" id="title-input" class="text-gray-900 " required>
+                <p class="task-form-txt text-gray-900 font-semibold text-lg" aria-required="true">Select Priority</p>
+                <select name="prior" id="priority">
+                  <option value="low">Low</option>
+                  <option value="moderate">Moderate</option>
+                  <option value="high">High</option>
+                </select>
+              </div>
+              <div class="modal-action" id="modal-btn">
+                <a href="#" class="btn " id="addtask-btn">Schedule Task</a>
+                <a href="#" class="btn ">Cancel</a>
+              </div>
+            </div>
+          </div>
+          <!-- Note Container Starts -->
+          <div class="note-container" id="note-container">
+            <div class="notes">
+              <div class="note-head text-lg font-semibold text-gray-900">Notes</div>
+              <div class="note-content">
+                <div class="prior">
+                  <span class="prior-text text-gray-900">Priority:</span><div class="prior-logo bg-green-400 text-md text-white text-semibold">Low</div><div class="prior-logo bg-violet-400 text-md text-white text-semibold">done</div>
+                </div>
+                <div class="date text-gray-900 text-xs">10/10/2002</div>
+
+                <p class="note-text">
+                  This is my new task and i an doing it. What about you are you doing any new work ?
+  
+                </p>
+                <div class="comp-btn"><button type="button" class="inline-block px-6 py-2.5 bg-gray-800 text-white font-small text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">Mark Complete</button></div>
+             </div>
+            </div>
+            <!-- NOtes 2 -->
+            <div class="notes">
+              <div class="note-head text-lg font-semibold text-gray-900">Notes</div>
+              <div class="note-content">
+                <div class="prior">
+                  <span class="prior-text text-gray-900">Priority:</span><div class="prior-logo bg-green-400 text-md text-white text-semibold">Low</div><div class="prior-logo bg-violet-400 text-md text-white text-semibold">done</div>
+                </div>
+                <div class="date text-gray-900 text-xs">10/10/2002</div>
+
+                <p class="note-text">
+                  This is my new task and i an doing it. What about you are you doing any new work ?
+  
+                </p>
+                <div class="comp-btn"><button type="button" class="inline-block px-6 py-2.5 bg-gray-800 text-white font-small text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out">Mark Complete</button></div>
+             </div>
+            </div>
+          </div>
+           
+        </main>
+      </div>
+      <div class="drawer-side">
+        <label for="my-drawer-3" class="drawer-overlay"></label>
+        <ul class="menu p-4 w-80 bg-base-100">
+          <!-- Sidebar content here -->
+          <li for="my-drawer-3"><a href="#my-modal-2">Add a Task</a></li>
+          <li><a>Sidebar Item 2</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Navbar End -->
+    <style>
+      .note-container{
+        
+        width: 100%;
+       
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+        
+
+      }
+      .notes{
+        width: 200px;
+        margin: 5px 5px;
+        min-height: 200px;
+        padding: 5px;
+        background-color: violet;
+        background: rgba( 255, 255, 255, 0.75 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+      }
+      .note-head{
+        width: 100%;
+        background-color: transparent;
+        padding: 5px;
+        text-align: center;
+      }
+      .note-content{
+        width: 100%;
+      }
+      .prior{
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align:center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+      }
+      .prior-logo{
+        width: 30%;
+        padding: 1px;
+        border-radius: 10px;
+        
+      }
+      .note-text{
+        margin: 10px;
+        text-align: center;
+        color: black;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 200;
+      }
+      .comp-btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .comp-logo{
+        width: 30%;
+        padding: 1px;
+        border-radius: 10px;
+      }
+      #modal-btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      #title-input{
+        width: 100%;
+        height: 30px;
+        background-color: aliceblue;
+        margin: 2px auto;
+        border-radius: 10px;
+        padding: 0 5px;
+      }
+      .task-form-txt{
+        margin: 5px auto;
+      }
+      .date{
+       margin-top: 2px;
+        text-align: center;
+      }
+    </style>
+  </body>
+</html>
