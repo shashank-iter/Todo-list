@@ -47,3 +47,86 @@ hr.new1 {
     border-radius: 1px;
     font-size: 17px;
 }
+
+.note-container{
+        
+    width: 100%;
+   
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    
+
+  }
+  .notes{
+    width: 200px;
+    margin: 8px 8px;
+    min-height: 200px;
+    padding: 5px;
+    background-color: violet;
+    background: rgba( 255, 255, 255, 0.75 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 5.5px );
+-webkit-backdrop-filter: blur( 5.5px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+  }
+  .note-head{
+    width: 100%;
+    background-color: transparent;
+    padding: 5px;
+    text-align: center;
+  }
+  .note-content{
+    width: 100%;
+  }
+  
+  .prior{
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align:center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .prior-logo{
+    
+   padding: 1px 3px;
+    border-radius: 10px;
+    
+  }
+  .note-text{
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 200;
+    width: 100%;
+  }
+  .comp-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .comp-logo{
+    width: 30%;
+    padding: 1px;
+    border-radius: 10px;
+  }
+  #modal-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .task-form-txt{
+    margin: 5px auto;
+  }
+  .date{
+   margin-top: 3px;
+    text-align: center;
+  }
