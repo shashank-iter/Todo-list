@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/index.css" />
-    
+    <script src="/index.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
@@ -219,10 +219,11 @@ let currentDate = `${day}-${month}-${year}`;
       <div class="comp-btn"><button type="button" class="inline-block px-6 py-2.5 bg-gray-800 text-white font-small text-xs leading-tight uppercase rounded shadow-md hover:bg-gray-900 hover:shadow-lg focus:bg-gray-900 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-gray-900 active:shadow-lg transition duration-150 ease-in-out" id="comp-task${noteCount}" onclick="remove()">Complete</button></div>
    </div>`)
    prior_color(text);
+   toast();
    let title1=document.getElementById("title-input")
    let task1 = document.getElementById("task")
-   title1.value="";
-   task1.value="";
+   title.value="";
+   task.value="";
    
         }
       }
