@@ -8,11 +8,11 @@
 - Responsiveness
 
 
-![Image](img1.png)
+![Image](https://github.com/shashank-iter/Todo-list/blob/master/img1.jpg)
         
-![Image](img2.png)
+![Image](https://github.com/shashank-iter/Todo-list/blob/master/img2.jpg)
         
-![Image](img3.png)
+![Image](https://github.com/shashank-iter/Todo-list/blob/master/img3.jpg)
      
 ## 🛠️ Tech Stack
 - [Tailwind CSS](https://tailwindcss.com/)
