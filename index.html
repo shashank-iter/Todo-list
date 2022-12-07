@@ -70,7 +70,7 @@
               </svg>
             </label>
           </div>
-          <div class="flex-1 px-2 mx-2  font-semibold text-xl text-gray-900">To-Do List</div>
+          <div class="flex-1 px-2 mx-2  font-semibold text-xl text-gray-900" id="todo">To-Do List</div>
           <div class="flex-none hidden lg:block">
             <ul class="menu menu-horizontal text-gray-900">
               <!-- Navbar menu content here -->
@@ -174,14 +174,14 @@
         <ul class="menu p-4 w-80  bg-violet-500">
           <!-- Sidebar content here -->
           <li for="my-drawer-3">To-Do List</li>
-          <li for="my-drawer-3"><a href="#my-modal-2" class="text-gray-900 font-semibold">Add a Task</a></li>
+          <li for="my-drawer-3"><a href="#my-modal-2" class="text-gray-900 font-semibold"  id="col-side">Add a Task</a></li>
           <li for="my-drawer-3"><a href="https://github.com/shashank-iter" class="text-gray-900 font-semibold">About</a></li>
         </ul>
       </div>
     </div>
     <!-- Navbar End -->
     <script>
-      window.onload= remove();
+      
   let noteCount=0;
 
 // Function for adding task---------------------------------------------------------------
@@ -220,6 +220,8 @@ let currentDate = `${day}-${month}-${year}`;
    </div>`)
    prior_color(text);
    toast();
+   
+   
         }
       }
 //  Function adding Tasks-----------------------------------------------------------------
@@ -229,9 +231,11 @@ let currentDate = `${day}-${month}-${year}`;
     $('#addtask-btn').click(function(){
         addtask();
     })
+    
 })
 // Function triggering add task end--------------------------------------------------------
 
+ 
 // Priority Status Color Set Function Start------------------------------------------------
 function prior_color(text){
  
@@ -251,19 +255,21 @@ function prior_color(text){
 
 // Function to remove the notes------------------------------------------------------------
 function remove(){
-  const buttons = document.getElementsByTagName("button");
+  const buttons = document.getElementsByClassName("comp-btn");
+  
   const buttonPressed = e => { 
    let a = e.target.id;
    
     let c =$('#'+a).parentsUntil(".note-container");
     c.remove();
-    toast_remove();
+    
    
 }
-
+toast_remove();
 for (let button of buttons) {
   button.addEventListener("click", buttonPressed);
 }
+
 }
 function toast(){
   Toastify({
