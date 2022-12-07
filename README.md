@@ -18,6 +18,11 @@
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Daisy UI](https://daisyui.com/)
 - [Toastify JS](https://apvarun.github.io/toastify-js/#
+
+# Download the Android app here 
+
+## [Todo-List.apk](https://appsgeyser.io/16361398/ToDo-List)
+
 ## 🙇 Author
 #### Shashank Pandey
 - Twitter: [@shashank_iter](https://twitter.com/shashank_iter)
