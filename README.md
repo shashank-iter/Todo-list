@@ -17,7 +17,7 @@
 ## 🛠️ Tech Stack
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Daisy UI](https://daisyui.com/)
-- [Toastify JS](https://apvarun.github.io/toastify-js/#
+- [Toastify JS](https://apvarun.github.io/toastify-js/#)
 
 # Download the Android app here 
 
